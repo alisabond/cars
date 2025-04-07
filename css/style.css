@@ -10,6 +10,11 @@ html {
     padding: 0;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 ul {
     list-style: none;
 }
@@ -17,6 +22,12 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -29,6 +40,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.3;
 }
 
 .header {
@@ -36,7 +48,7 @@ body {
 }
 
 .header-main {
-    /*background-color: transparent;*/
+    background-color: transparent;
 }
 
 .header__inner {
@@ -57,6 +69,86 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.footer {
+    background-color: #151515;
+    color: #fff;
+    padding: 50px 0 32px;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer__menu-list {
+    max-width: 250px;
+}
+
+.footer__menu-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* + doesn't set padding to 1 element, set paddings from second element*/
+.footer__menu-item + .footer__menu-item {
+    margin-top: 15px;
+    padding-top: 20px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 52px;
+}
+
+.footer__copy {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.copy__nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer__copy-text {
+    font-size: 12px;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.top {
+    color: #fff;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 50px;
+}
+
+.title {
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+
+}
+
+.top__link {
+    background-color: #151515;
+    padding: 23px;
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+
 
 
 
