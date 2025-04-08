@@ -1,3 +1,14 @@
+const swiper = new Swiper(".swiper", {
+    effect: "fade",
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
+
 const tabItem = document.querySelectorAll(".tabs__btn-item");
 const tabContent = document.querySelectorAll(".tabs__content-item");
 
@@ -23,13 +34,12 @@ function open(evt) {
 }
 
 
-const swiper = new Swiper(".swiper", {
-    effect: "fade",
-    pagination: {
-        el: ".swiper-pagination",
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-});
+const menuBtn = document.querySelector(".menu__btn");
+/*const menu = document.querySelector(".menu__list");
+
+console.log(menuBtn);
+menuBtn.addEventListener("click", function () {
+    menu.classList.toggle("menu__list--active");
+});*/
+
+
